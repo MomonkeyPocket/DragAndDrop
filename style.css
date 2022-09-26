@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(
+            /* 右下にかけてグラデーション */
+            to right bottom,
+            rgb(82, 120, 163),
+            rgb(71, 158, 155));
+    display: grid;
+    place-items: center;
+}
+
+.fill {
+    background-image: url("http://source.unsplash.com/random/200×200");
+    background-size: cover;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+}
+
+.empty {
+    display: inline-block;
+    height: 210px;
+    width: 210px;
+    margin: 10px;
+    border: 2px solid rgb(21, 54, 75);
+    background: white;
+}
+
+/* 画像をつかんでいる時 */
+.hold {
+    border: 4px solid #ccc;
+}
+
+/* 画像をemptyにホバーしている時 */
+.hovered {
+    background: #f4f4f4;
+    border-style: dotted;
+}
+
+/* 画像をつかんでいる時の、fillの画像表示 */
+.invisible {
+    display: none;
+}
